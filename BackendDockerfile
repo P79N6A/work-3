@@ -1,0 +1,17 @@
+FROM python:3.6
+
+# user
+User root
+
+RUN mkdir -p /usr/src/app
+ADD . /usr/src/app
+WORKDIR /usr/src/app
+
+RUN chmod +x docker-entrypoint.sh
+
+RUN pip3.6 install -U -r requirements.txt -i https://pypi.douban.com/simple/ --trusted-host pypi.doubanio.com
+
+EXPOSE 8888
+
+ENTRYPOINT ["/usr/src/app/docker-entrypoint.sh"]
+CMD python3.6 trade_backend.py --config=aliyun-production --port=8888

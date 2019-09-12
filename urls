@@ -1,0 +1,8 @@
+#encoding=utf-8
+'''
+Notice the os.path.insert or os.path.append, and the file may fails. It's just a guide.
+'''
+
+
+urls = [
+]
