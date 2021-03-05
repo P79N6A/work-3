@@ -19,10 +19,10 @@ PAY_API_HOST = 'http://60.190.28.43:8160/'
 
 ENV = None
 
-access_key_id = 'LTAISiPzTu2Ly5TB'
-access_key_secret = 'B6phnRnbxZJCuCgV16G2mwUraa5h8H'
-endpoint = 'http://oss-cn-hongkong.aliyuncs.com'
-bucket_name = 'kanjian-star'
+access_key_id = ''
+access_key_secret = ''
+endpoint = ''
+bucket_name = ''
 AMQP_URL = "amqp://test:test@192.168.0.13:5672/test"
 
 
@@ -32,8 +32,8 @@ PDF_BUCKET = {
 }
 
 ALI_MESSAGE = {
-    'ali_accesskey': 'LTAIV8xmPntrkQfu',
-    'ali_access_key_secret': 'AkjhCJF8ooqTrxwMvZMxJDb5jtpN1G'
+    'ali_accesskey': '',
+    'ali_access_key_secret': ''
 }
 
 
@@ -100,7 +100,7 @@ def apply_env(env):
             'HOST': 'r-uf65236174539204.redis.rds.aliyuncs.com',
             'PORT': 6379,
             'DB': 9,
-            'PASSWORD': 'nXccPPxx8n2Zfu4MVxR9'
+            'PASSWORD': 'nXccPPxx8n2Zfu4MVxR91'
         }
         AMQP_URL = "amqp://coolvox:D8RARZYRKGnv3b9g@rabbitmq.star-sh.svc.cluster.local:5672"
     else:
